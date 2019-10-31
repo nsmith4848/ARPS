@@ -1,5 +1,5 @@
 # ARPS
-This is an augmented reality-based projection system designed for use with Jerome Etienne's AR.js framework and the a-frame VR framework.
+This is an augmented reality-based projection system designed for use with [Jerome Etienne's](https://github.com/jeromeetienne) AR.js framework and the a-frame VR framework.
 ## What can it do?
 This system is designed to project a 2 dimensional image onto a three dimensional environment via the camera on a user's device.  The code listed here should be run on a web server.  Then users will be able to see the sample image in real time.
 ## Applications of this
@@ -15,3 +15,5 @@ This web page utilizes Geo-coordinate-based augmented reality.  This means that 
 WARNING: GPS pinging does not work indoors.  While most mobile devices have mitigated this by predicting location around an accelerometer, the position will likely still be off by a little, especially with older devices.  
 ## What can still be done?
 Currently, we are working on bringing this system to production-level.  Before that, however, we must work out some bugs with asynchronous model updating.  Once these tasks have been accomplished we may work towards an interactive augmented reality experience, particularly with being able to answer questions in a classroom setting using "AR Buttons".  
+## How to tinker with this project
+If you are interested in building your own project based on this or simply adding to this project, I reccommend viewing the documentation associated with each framework, in particular [AR.js here](https://github.com/jeromeetienne/AR.js/blob/master/README.md) and [A-frame here](https://aframe.io/).  Other than these two frameworks the project is basic javascript and component based html.  
