@@ -6,15 +6,15 @@
   <meta http-equiv="Expires" content="0">-->
 </head>
 <!--Passes in a-frame components and interaction between a-frame and arjs-->
-<script src="/A-Frame/aframe-master/aframe-master/dist/aframe-v0.9.2.min.js"></script>
-<script src="AR.js/AR.js-master/AR.js-master/aframe/build/aframe-ar.js"></script>
+<script src="/../A-Frame/aframe-master/aframe-master/dist/aframe-v0.9.2.min.js"></script>
+<script src="../AR.js/AR.js-master/AR.js-master/aframe/build/aframe-ar.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
 <!--  sets up scene for embedded to ignore external css, for arjs to turn vr to ar, and for debug to allow component flushing -->
     <a-scene embedded arjs debug>
       <!-- sets marker in scene to the square hiro marker discussed in the readme -->
       <a-marker preset="hiro" id = "main">
         <!-- To avoid overlap, we turned the 3d object into a 2d plane rendered with the image as a texture-->
-        <a-entity id="ent" geometry= "primitive: plane; height: 3; width: 3;" rotation= "-90 0 0;" material="src: \.\img\logicGates.png">
+        <a-entity id="ent" geometry= "primitive: plane; height: 3; width: 3;" rotation= "-90 0 0;" material="src: \..\img\logicGates.png">
         </a-entity>
       </a-marker>
       <!--This last component makes the user device's camera view the background of the scene-->
@@ -30,7 +30,7 @@ function reload(){
   var entity = document.getElementById("ent");
   var entityclone = entity.cloneNode(true);
   entity.remove();
-  entityclone.setAttribute('a-entity', { material: 'src: \.\img\logicGates2.png'+new Date().getTime()});
+  entityclone.setAttribute('a-entity', { material: 'src: \..\img\logicGates2.png'+new Date().getTime()});
   
   document.getElementById("main").appendChild(entityclone);
   document.querySelector('a-scene').flushToDOM(true);
@@ -42,7 +42,7 @@ function reloadClone(){
   var entity = document.getElementById("ent");
   var entityclone = entity.cloneNode(true);
   entity.remove
-  entityclone.setAttribute('a-entity', { material: 'src: \.\img\logicGates.png'+new Date().getTime()});
+  entityclone.setAttribute('a-entity', { material: 'src: \..\img\logicGates.png'+new Date().getTime()});
   
   document.getElementById("main").appendChild(entityclone);
   document.querySelector('a-scene').flushToDOM(true);
