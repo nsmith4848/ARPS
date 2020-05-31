@@ -6,8 +6,8 @@
   <meta http-equiv="Expires" content="0">-->
 </head>
 <!--Passes in a-frame components and interaction between a-frame and arjs-->
-<script src="/A-Frame/aframe-master/aframe-master/dist/aframe-v0.9.2.min.js"></script>
-<script src="AR.js/AR.js-master/AR.js-master/aframe/build/aframe-ar.js"></script>
+<script src="/../A-Frame/aframe-master/aframe-master/dist/aframe-v0.9.2.min.js"></script>
+<script src="../AR.js/AR.js-master/AR.js-master/aframe/build/aframe-ar.js"></script>
 <script>
 function reload(){
   //This function will reload the texture and re-render it onto the web-page every 5 seconds
@@ -22,7 +22,7 @@ window.setInterval(reload, 5000);
     <a-scene embedded arjs debug>
       <!--a-asset to load sample slides as a texture onto the 3d plane -->
       <a-assets id = "texture">
-        <img id="boxTexture" src="\.\img\logicGates.png">
+        <img id="boxTexture" src="\..\img\logicGates.png">
       </a-assets>
       <!-- sets marker in scene to the square hiro marker discussed in the readme -->
       <a-marker preset="hiro" id = "main">
